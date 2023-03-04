@@ -12,7 +12,7 @@ class AddressBookMain {
             boolean condition=true;
 
             while(condition) {
-                System.out.println("1.ADD CONTACT \n2.DISPLAY CONTACT");
+                System.out.println("1.ADD CONTACT \n2.DISPLAY CONTACT \n3.EDIT CONTACT");
                 System.out.println("Enter the Option Number");
                 option = sc.nextInt();
 
@@ -23,7 +23,9 @@ class AddressBookMain {
                     case 2:
                         obj.display();
                         break;
-
+                    case 3:
+                        obj.editContacts();
+                        break;
                     default:
                         condition=false;
                         break;
